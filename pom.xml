@@ -44,7 +44,7 @@
   		<dependency>
 			<groupId>com.randomnoun.common</groupId>
 			<artifactId>common-public</artifactId>
-			<version>0.2.22-SNAPSHOT</version>
+			<version>0.2.22</version>
 			<exclusions>
 				<exclusion>
 					<groupId>org.springframework</groupId>

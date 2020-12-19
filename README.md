@@ -73,7 +73,7 @@ CREATE TABLE `datatype-dev`.`tblalltypeHistory` (
 
 ## Doesn't this already exist ?
 
-Probably. I wrote this close to a decade ago, based on a system I saw in use 15 years ago, so there's probably products out there that do the same sort of thing. 
+Probably. I wrote this close to a decade ago, based on a system I saw in use 15 years ago, so there's a good chance there's other products out there that do the same sort of thing. 
 
 
 ## Licensing

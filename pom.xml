@@ -12,7 +12,6 @@
 	
 	<packaging>jar</packaging>
 	<name>historytable-cli</name>
-	
 	<url>http://www.randomnoun.com/maven.html</url>
  
 	<dependencies>
@@ -125,8 +124,8 @@
   	</ciManagement>
   	<inceptionYear>2010-08-15</inceptionYear>
 	<scm>
-		<connection>scm:git:ssh://git@gitlab.dev.randomnoun:2222/randomnoun/historytable-cli.git</connection>
-		<developerConnection>scm:git:ssh://git@gitlab.dev.randomnoun:2222/randomnoun/historytable-cli.git</developerConnection>
+		<connection>scm:git:http://gitlab.dev.randomnoun/randomnoun/historytable-cli.git</connection>
+		<developerConnection>scm:git:http://gitlab.dev.randomnoun/randomnoun/historytable-cli.git</developerConnection>
 		<url>http://gitlab.dev.randomnoun/randomnoun/historytable-cli</url>
 	</scm>
   	<organization>

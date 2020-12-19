@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.randomnoun.db</groupId>
   <artifactId>historytable-cli</artifactId>
-  <version>0.0.2-SNAPSHOT</version>
+  <version>0.0.3-SNAPSHOT</version>
   
     <parent>
 		<artifactId>parent-pom</artifactId>
@@ -170,6 +170,25 @@
 	          </execution>
 	        </executions>
 	      </plugin>
+	      
+	      <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-javadoc-plugin</artifactId>
+            <version>3.2.0</version>
+            <executions>
+                <execution>
+                    <id>attach-javadocs</id>
+                    <goals>
+                        <goal>jar</goal>
+                    </goals>
+                </execution>
+            </executions>
+            <configuration>
+            	<!--  <failOnError>false</failOnError>  -->
+            	<source>8</source>
+            </configuration>
+        </plugin>
+        
         </plugins>
 	</build>
   

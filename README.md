@@ -71,6 +71,12 @@ CREATE TABLE `datatype-dev`.`tblalltypeHistory` (
 [... the SQL to create the history tables and triggers ...]
 ```
 
+## Where can I get it ? 
+
+I'm pretty new to this github thing, so eventually I'll make a release available here, but for now you can grab it from: https://repo1.maven.org/maven2/com/randomnoun/db/historytable-cli/0.0.5/
+
+The 'with-dependencies' JAR includes all the sub-dependencies if you're actually running this from a command-line.
+
 ## Doesn't this already exist ?
 
 Probably. I wrote this close to a decade ago, based on a system I saw in use 15 years ago, so there's a good chance there's other products out there that do the same sort of thing. 

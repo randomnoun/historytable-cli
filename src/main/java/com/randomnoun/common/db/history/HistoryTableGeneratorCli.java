@@ -110,7 +110,7 @@ public class HistoryTableGeneratorCli {
 		options.addOption( Option.builder("j").longOpt( "jdbc" ).desc( "JDBC connection string" ).required().hasArg().argName("jdbc").build() );
 		options.addOption( Option.builder("u").longOpt( "username" ).desc( "JDBC username" ).hasArg().argName("username").build() );
 		options.addOption( Option.builder("p").longOpt( "password" ).desc( "JDBC password" ).hasArg().argName("password").build() );
-		options.addOption( Option.builder("d").longOpt( "driver" ).desc( "JDBC driver class name; default = com.mysql.jdbc.Driver" ).hasArg().argName("driver").build() );
+		options.addOption( Option.builder("d").longOpt( "driver" ).desc( "JDBC driver class name; default = org.mariadb.jdbc.Driver" ).hasArg().argName("driver").build() );
 		options.addOption( Option.builder("s").longOpt( "script" ).desc( "Script filename" ).hasArg().argName("script").build() );
 		options.addOption( Option.builder("x").longOpt( "execute" ).desc( "Execute generated SQL" ).build() );
 		options.addOption( Option.builder("q").longOpt( "quiet" ).desc( "Quiet mode" ).build() );
@@ -122,14 +122,14 @@ public class HistoryTableGeneratorCli {
 		String footer = "\n" +
 		  "The options available will depend on the script chosen.\n" +
 		  "\n" +
-		  "The default script handles the following options:\n" +
+		  "The default script operates on mysql databases and handles the following options:\n" +
 		  "\n" +
 		  "  undoEnabledTableNames - (csv list) names of tables that can be undone\n" +
 		  "\n" +
 		  "  dropTables - (boolean) true to drop and recreate history SQL tables\n" +
 		  "      false to alter existing tables\n" +
 		  "\n" +
-		  "  existingDataUserActionId - (long) the ID to use for existign data when populating initial history\n" +
+		  "  existingDataUserActionId - (long) the ID to use for existing data when populating initial history\n" +
 		  "      table records\n" +
 		  "\n" +
 		  "  alwaysRecreateTriggers - (boolean) when true, drop and recreate triggers even if table\n" +

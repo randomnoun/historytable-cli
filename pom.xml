@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.randomnoun.db</groupId>
   <artifactId>historytable-cli</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
+  <version>0.0.2-SNAPSHOT</version>
   
     <parent>
 		<artifactId>parent-pom</artifactId>
@@ -127,7 +127,8 @@
 		<connection>scm:git:http://gitlab.dev.randomnoun/randomnoun/historytable-cli.git</connection>
 		<developerConnection>scm:git:http://gitlab.dev.randomnoun/randomnoun/historytable-cli.git</developerConnection>
 		<url>http://gitlab.dev.randomnoun/randomnoun/historytable-cli</url>
-	</scm>
+	  <tag>historytable-cli-0.0.1</tag>
+  </scm>
   	<organization>
     	<name>randomnoun</name>
     	<url>http://www.randomnoun.com</url>

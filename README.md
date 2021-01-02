@@ -1,4 +1,5 @@
 
+
 # historytable-cli
 
 **historytable-cli**  generates stored procedures and triggers to convert your plain old RDBMS into a data warehouse &trade;.
@@ -76,6 +77,10 @@ CREATE TABLE `datatype-dev`.`tblalltypeHistory` (
 I'm pretty new to this github thing, so eventually I'll make a release available here, but for now you can grab it from: https://repo1.maven.org/maven2/com/randomnoun/db/historytable-cli/0.0.5/
 
 The 'with-dependencies' JAR includes all the sub-dependencies if you're actually running this from a command-line.
+
+## What databases can I run this on ?
+
+Just mysql at the moment, but it uses [jessop](https://github.com/randomnoun/jessop) scripts to generate the SQL, so should be easy enough to port to other vendors. I had a version that worked with MS SqlServer at some point, which I'll add back in probably. 
 
 ## Doesn't this already exist ?
 

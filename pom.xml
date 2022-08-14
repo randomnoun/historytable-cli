@@ -118,6 +118,18 @@
 					<groupId>org.ccil.cowan.tagsoup</groupId>
 					<artifactId>tagsoup</artifactId>
 				</exclusion>
+				<exclusion>
+					<groupId>jakarta.mail</groupId>
+					<artifactId>jakarta.mail-api</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>net.java.dev.jna</groupId>
+					<artifactId>jna-platform</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>org.apache.httpcomponents</groupId>
+					<artifactId>httpclient</artifactId>
+				</exclusion>
 			</exclusions>
 		</dependency>
 

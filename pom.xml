@@ -26,6 +26,7 @@
             <groupId>com.randomnoun.common</groupId>
             <artifactId>log4j-one</artifactId>
             <version>1.0.0</version>
+            <scope>provided</scope>
         </dependency>
 
 		<dependency>

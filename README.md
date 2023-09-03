@@ -1,4 +1,4 @@
-
+[![Maven Central](https://img.shields.io/maven-central/v/com.randomnoun.db/historytable-cli.svg)](https://search.maven.org/artifact/com.randomnoun.db/historytable-cli)
 
 # historytable-cli
 

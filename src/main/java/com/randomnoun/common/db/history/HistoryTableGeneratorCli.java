@@ -64,10 +64,10 @@ public class HistoryTableGeneratorCli {
 		htg.setJessopScriptFilename(script);
 		htg.setSchemaName("datatype-dev");
 		Map<String, Object> htgOptions = htg.getOptions();		
-		// htgOptions.putAll(props);;
 		for (Map.Entry<Object, Object> e : props.entrySet()) {
 			htgOptions.put((String) e.getKey(), (String) e.getValue());
 		}
+		htg.setOptions(htgOptions);
 		String sql = htg.generateHistoryTableSql();
 		
 		final Connection connection = ds.getConnection();
@@ -167,9 +167,9 @@ public class HistoryTableGeneratorCli {
 		
 		// @TODO verbose flag
 		Log4jCliConfiguration lcc = new Log4jCliConfiguration();
-		Properties lprops = new Properties();
-		lprops.put("log4j.rootCategory", "WARN, CONSOLE");
-		lcc.init("[HistoryTableGeneratorCli]", lprops);
+		Properties logProps = new Properties();
+		logProps.put("log4j.rootCategory", "WARN, CONSOLE");
+		lcc.init("[HistoryTableGeneratorCli]", logProps);
 		
 		Class.forName(driverName);
 		
